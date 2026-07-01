@@ -10,9 +10,9 @@ You may view, clone, study, discuss and adapt the public website code, page stru
 
 You may quote short excerpts with attribution, propose corrections, improve accessibility, or use the structure as inspiration for your own lawful civic project.
 
-## Boundaries
+## Stewardship Lines
 
-You may not:
+This licence keeps these uses reserved:
 
 - sell this site, structure, templates, copy, strategy or assets as a standalone product
 - imply that P4A, Luke Nathan Hayes, Strange But True, Aura or any related project endorses you without written permission
@@ -36,4 +36,4 @@ P4A and this Oceania lab are exploratory unless a future public record explicitl
 
 If you reuse or adapt this public infrastructure, keep clear attribution to Luke Nathan Hayes and the P4A-inspired civic-interface scaffold where practical.
 
-Good-faith civic remixing is welcome. Fake endorsement is not.
+Good-faith civic remixing is welcome. Fake endorsement stays outside this licence.

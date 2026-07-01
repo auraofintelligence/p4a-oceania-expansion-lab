@@ -1,6 +1,6 @@
 # Oceania Surge Notes
 
-The surge shelf should not be timid.
+The surge shelf carries full voltage.
 
 It should hold:
 
@@ -15,6 +15,6 @@ It should hold:
 - ethical overcompliance and public ledgers
 - culture, music, games and public challenges as translation pathways
 
-The rule is not "make it small". The rule is "mark the shelf".
+The rule is "full height, clear proof path".
 
-Use bold language, but do not claim registration, authority, medical proof, legal status, funding, procurement or public consent.
+Use bold language with visible routes for registration, authority, medical proof, legal status, funding, procurement and public consent.

@@ -1,6 +1,6 @@
 # Project Status
 
-P4A Oceania Expansion Lab is an exploratory static website.
+P4A Oceania Expansion Lab is an open civic prototype for self-sovereign participants.
 
 It is not:
 
@@ -14,4 +14,4 @@ It is not:
 - a C-Hour issuance system
 - a donation or membership system
 
-The public line is simple: the site explores how the P4A civic workbench could be translated outward without pretending that legitimacy, registration, consent or law already exist.
+The public line is simple: the site explores how the P4A civic workbench could translate outward through receipts, consent, local authority, source trails and working civic tools.

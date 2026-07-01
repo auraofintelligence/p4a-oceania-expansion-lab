@@ -219,10 +219,10 @@ main, section, article, div, p, h1, h2, h3, span, a {
 .hero {
   position: relative;
   display: grid;
-  min-height: calc(100vh - 5rem);
+  min-height: min(43rem, calc(88vh - 4rem));
   align-items: center;
   overflow: hidden;
-  padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem);
+  padding: clamp(3.25rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem) clamp(1rem, 2vw, 1.4rem);
 }
 
 .hero-image {
@@ -304,7 +304,7 @@ h1, h2 {
 
 h1 {
   max-width: 14ch;
-  font-size: clamp(2.7rem, 7vw, 6.4rem);
+  font-size: clamp(2.7rem, 5.8vw, 5.25rem);
 }
 
 h2 {
@@ -777,7 +777,7 @@ p {
 
   h1 {
     max-width: 100%;
-    font-size: clamp(2.2rem, 13vw, 3.1rem);
+    font-size: clamp(2.1rem, 11vw, 2.75rem);
   }
 
   h2 {
@@ -795,6 +795,10 @@ p {
   .region-grid,
   .principle-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-grid .status-card {
+    display: none;
   }
 
   .card,

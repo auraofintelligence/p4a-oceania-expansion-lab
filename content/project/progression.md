@@ -1,6 +1,6 @@
 # Oceania Progression Notes
 
-The progression should stay careful:
+The progression stays sovereign:
 
 1. Australia seed.
 2. Local self-similar workbench.
@@ -9,4 +9,4 @@ The progression should stay careful:
 5. Oceania commons questions.
 6. Oceania surge shelf.
 
-Do not write as if P4A speaks for Oceania. Use questions, prompts and draft language.
+Write as if P4A is offering a forkable scaffold to Oceania, not speaking over Oceania.

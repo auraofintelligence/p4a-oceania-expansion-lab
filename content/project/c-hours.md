@@ -2,9 +2,9 @@
 
 A C-Hour is described on this site as a draft public-good receipt for one verified hour of useful contribution.
 
-It is not active. It is not money. It is not a token sale. It is not yield. It is not a bank substitute. It is not a donation receipt. It is not a membership point.
+It is a concept layer for contribution recognition, not an active issuance system.
 
-Any real pilot would need:
+Any real pilot runs through:
 
 - legal review
 - anti-fraud design
