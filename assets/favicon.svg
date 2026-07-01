@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="P4O mark">
+  <rect width="64" height="64" rx="8" fill="#071528"/>
+  <path d="M10 42c8-18 20-25 37-28 4 8 6 18 2 31-13 5-27 4-39-3z" fill="#1aa7ff"/>
+  <path d="M16 38c8-11 18-16 31-18 2 7 2 13-1 20-10 3-20 3-30-2z" fill="#7c36ff"/>
+  <circle cx="43" cy="22" r="4" fill="#ffe07a"/>
+  <text x="31.8" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">P4O</text>
+</svg>
