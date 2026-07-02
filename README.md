@@ -20,7 +20,7 @@ Current public status: open civic prototype. Party registration, campaigning, le
 
 ## Sources Used
 
-- P4A public civic workbench
+- P4A public civic workbench: [site](https://auraofintelligence.github.io/p4a_xyz/) and [repo](https://github.com/auraofintelligence/p4a_xyz)
 - C-Hour legislation and national security memo
 - Decentralised Compute for Australian Communities
 - Australia's Olympic Space Gambit

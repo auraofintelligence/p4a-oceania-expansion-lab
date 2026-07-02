@@ -2,8 +2,9 @@
 
 Sources used:
 
-- Existing P4A site at `C:\Users\lukec\Documents\GitHubLocal\p4a_xyz`
-- Local DOCX at `C:\Users\lukec\Downloads\C-Hour Legislation and National Security.docx`
+- P4A public civic workbench site: https://auraofintelligence.github.io/p4a_xyz/
+- P4A source repo: https://github.com/auraofintelligence/p4a_xyz
+- C-Hour legislation and national security memo
 
 The source documents use a strong strategic memo tone. Public pages use Australian English, keep the force, and attach serious claims to source trails, prototypes and evidence gates.
 
