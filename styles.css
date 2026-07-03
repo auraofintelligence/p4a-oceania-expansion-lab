@@ -783,6 +783,7 @@ p {
 }
 
 .oceania-map-stage img {
+  display: block;
   width: 100%;
   aspect-ratio: 662 / 478;
   object-fit: cover;
