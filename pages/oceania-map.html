@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Oceania Map | P4A Oceania Expansion Lab</title>
-  <meta name="description" content="A living Oceania field map for the P4A civic workbench idea, with region cards, sovereign nodes and consent-led bridges.">
+  <meta name="description" content="A sourced Oceania atlas page for the P4A civic workbench idea, with a Wikimedia political map, clickable region pins, territory cards and follow-up notes.">
   <meta name="theme-color" content="#102A4A">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../styles.css?v=20260701c">
+  <link rel="stylesheet" href="../styles.css?v=20260703b">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,78 +32,85 @@
     <section class="hero page-hero">
       <div class="hero-image"><img loading="eager" fetchpriority="high" decoding="async" src="../assets/p4a-map-card.webp" alt="Blue-purple P4A map artwork used as a seed image for Oceania questions"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Translation map</p>
-        <h1>Oceania is a living field, not a market segment.</h1>
-        <p class="hero-copy">Australia, Aotearoa New Zealand, Pacific island countries, First Nations, tangata whenua, local crews and ocean systems all carry intelligence. The map is a meeting field for sovereign nodes, bridges and shared quests.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#regions">Explore regions</a><a class="button button-secondary" href="compliance.html">Open trust stack</a></div>
+        <p class="eyebrow">Sourced atlas</p>
+        <h1>Oceania needs a map with receipts.</h1>
+        <p class="hero-copy">This page treats Oceania as a sourced research field, not a settled command map. The names and status notes below say what checked sources list, where those sources disagree, and what needs follow-up before anyone builds from it.</p>
+        <div class="research-badge"><span>Sources checked</span><strong>2026-07-03</strong><small>Australia/Brisbane</small></div>
+        <div class="hero-actions"><a class="button button-primary" href="#atlas">Open the atlas</a><a class="button button-secondary" href="#source-ledger">Check sources</a></div>
       </div>
     </section>
 
-    <div class="notice-strip"><span>Map status: conceptual field map. Use it to find bridges while countries, peoples and protocols keep their own voice.</span></div>
+    <div class="notice-strip"><span>Atlas status: research aid only. Sources checked say different things in different frames, so the page keeps caveats and follow-up notes close to the map.</span></div>
 
-    <section class="section">
-      <div class="media-panel reveal">
-        <div class="ocean-chart" aria-label="Conceptual Oceania field chart">
-          <div class="chart-node">Australia seed</div>
-          <div class="chart-node">Aotearoa NZ</div>
-          <div class="chart-node">Pacific islands</div>
-          <div class="chart-node">Ocean commons</div>
-          <div class="chart-node">Future shelf</div>
+    <section class="section" id="atlas">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Clickable map</p><h2>Start with the actual ocean.</h2></div>
+        <p>The base image is a Wikimedia Commons PNG political map of Oceania with EEZ-style borders. Use the atlas filters below to show one hover layer at a time, so broad source frames do not sit on top of states and territories.</p>
+      </div>
+      <div class="oceania-atlas-layout reveal" data-oceania-atlas>
+        <div class="oceania-map-panel">
+          <div class="oceania-map-stage">
+            <img class="oceania-map-image" src="../assets/oceania-political-map.png" alt="Political map of Oceania with country and territory labels from Wikimedia Commons">
+            <svg class="oceania-hit-map" viewBox="0 0 662 478" preserveAspectRatio="none" role="img" aria-labelledby="oceania-hit-title oceania-hit-desc" data-oceania-hit-map>
+              <title id="oceania-hit-title">Interactive hit regions over the Wikimedia Oceania map</title>
+              <desc id="oceania-hit-desc">Hover or focus a source-listed area to highlight the matching atlas card.</desc>
+            </svg>
+          </div>
+          <p class="map-source">Base map: <a href="https://commons.wikimedia.org/wiki/File:Oceania_political_map.png">Oceania political map.png</a>, Wikimedia Commons, CC BY-SA 4.0. Original upload source says 31 January 2022; Commons current file timestamp checked as 1 February 2022.</p>
         </div>
-        <div class="media-copy">
-          <p class="eyebrow">Blue layer</p>
-          <h2>A civic archipelago with voltage.</h2>
-          <p>The map behaves like islands with bridges, not a command centre. Each place brings its own language, law, protocol and crew; the shared interface helps those crews see each other.</p>
-          <p>The useful question is bigger than expansion: what civic operating system helps communities record care, move resources, survive shocks and build public trust without surrendering themselves?</p>
+        <div class="oceania-atlas-copy">
+          <p class="eyebrow">How to read it</p>
+          <h2>Choose a layer, then hover the map.</h2>
+          <p>Sources checked for this pass include the UN M49 page, Wikimedia Commons map metadata, Wikipedia's Oceania article and Oceania country/territory list, and DFAT's Pacific regional organisations page.</p>
+          <p>The wording stays deliberately provisional: sources list, sources describe, sources conflict, and follow-up is part of the work.</p>
+          <div class="source-chip-row" aria-label="Fast source links">
+            <a href="https://unstats.un.org/unsd/methodology/m49/">UN M49</a>
+            <a href="https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_in_Oceania">Wikipedia list</a>
+            <a href="https://www.dfat.gov.au/international-relations/regional-architecture/pacific-islands/pacific-islands-regional-organisation">DFAT/PIF notes</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="regions">
       <div class="section-heading reveal">
-        <div><p class="eyebrow">Region cards</p><h2>Different rooms, different powers.</h2></div>
-        <p>Use the buttons to filter the field. Each card is an invitation to build with place, protocol, consent and memory.</p>
+        <div><p class="eyebrow">Atlas cards</p><h2>Different source frames, different doors.</h2></div>
+        <p>Use the filters to move between regional frames, sovereign or associated states, territories, and follow-up shelves. Open each card for names, source dates and caveats.</p>
       </div>
-      <div class="region-switcher reveal" data-region-switcher>
-        <div class="region-buttons" role="group" aria-label="Filter region cards">
-          <button type="button" data-region-choice="all" aria-pressed="true">All</button>
-          <button type="button" data-region-choice="australia" aria-pressed="false">Australia</button>
-          <button type="button" data-region-choice="aotearoa" aria-pressed="false">Aotearoa NZ</button>
-          <button type="button" data-region-choice="pacific" aria-pressed="false">Pacific</button>
-          <button type="button" data-region-choice="commons" aria-pressed="false">Commons</button>
+      <div class="oceania-atlas reveal" data-oceania-atlas>
+        <div class="region-buttons oceania-filter-buttons" role="group" aria-label="Filter Oceania atlas cards">
+          <button type="button" data-oceania-choice="all" aria-pressed="true">All cards</button>
+          <button type="button" data-oceania-choice="region" aria-pressed="false">Regions</button>
+          <button type="button" data-oceania-choice="state" aria-pressed="false">States</button>
+          <button type="button" data-oceania-choice="territory" aria-pressed="false">Territories</button>
+          <button type="button" data-oceania-choice="followup" aria-pressed="false">Follow-up</button>
         </div>
-        <div class="region-grid">
-          <article class="region-card" data-region-card="australia">
-            <span>Australia</span>
-            <h3>Seed workbench</h3>
-            <p>P4A starts as an Australian civic workbench: tools, sources, ledgers, constitutional questions, culture, C-Hours and public proof made visible.</p>
-          </article>
-          <article class="region-card" data-region-card="aotearoa">
-            <span>Aotearoa NZ</span>
-            <h3>Comparison context</h3>
-            <p>Aotearoa brings MMP politics, tangata whenua authority, treaty memory, local language and a different civic rhythm. The Australian scaffold is a reference point; local authority sets the path.</p>
-          </article>
-          <article class="region-card" data-region-card="pacific">
-            <span>Pacific</span>
-            <h3>Ocean-first intelligence</h3>
-            <p>Climate risk, migration, ocean stewardship, language, cultural authority and sovereignty are primary architecture. Pacific voices carry navigation power.</p>
-          </article>
-          <article class="region-card" data-region-card="commons">
-            <span>Ocean commons</span>
-            <h3>Shared quests</h3>
-            <p>Food waste, disaster response, care work, public health resilience, shipping, ocean science, cyber safety and decentralised infrastructure cross borders through bridges, not command.</p>
-          </article>
-          <article class="region-card" data-region-card="commons">
-            <span>Digital layer</span>
-            <h3>Local-first records</h3>
-            <p>Markdown, public ledgers, source trails, consent flags and correction paths could become a shared method, while the actual records stay owned by their people and places.</p>
-          </article>
-          <article class="region-card" data-region-card="australia">
-            <span>Future shelf</span>
-            <h3>Brisbane 2032 as a prompt</h3>
-            <p>The source memo uses Brisbane 2032 as a rallying horizon. This site treats that as a scenario prompt, not a procurement plan or government programme.</p>
-          </article>
+        <div class="oceania-card-layout">
+          <aside class="oceania-detail-panel" data-oceania-detail aria-live="polite">
+            <span data-oceania-detail-kind>Source frame</span>
+            <h3 data-oceania-detail-name>Hover or open an area</h3>
+            <p data-oceania-detail-summary>The atlas will show the matching source note here.</p>
+            <p data-oceania-detail-status></p>
+            <p class="source-line" data-oceania-detail-source></p>
+          </aside>
+          <div class="oceania-card-grid" data-oceania-card-grid></div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="source-ledger">
+      <div class="source-panel reveal">
+        <span>Source ledger</span>
+        <h2>Receipts stay visible.</h2>
+        <p><strong>Research run:</strong> 2026-07-03, Australia/Brisbane. This page uses "sources checked say" language because the map, status and membership layers require follow-up before any stronger claim.</p>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Oceania_political_map.png">Wikimedia Commons: Oceania political map.png</a> - PNG map, CC BY-SA 4.0, original source date 31 January 2022, current Commons file timestamp checked as 1 February 2022.</li>
+          <li><a href="https://unstats.un.org/unsd/methodology/m49/">United Nations Statistics Division M49</a> - checked source says M49 groupings are for statistical convenience and do not imply political affiliation or legal status.</li>
+          <li><a href="https://en.wikipedia.org/wiki/Oceania">Wikipedia: Oceania</a> - checked page says definitions vary; page last edited 22 June 2026 UTC when checked.</li>
+          <li><a href="https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_in_Oceania">Wikipedia: List of sovereign states and dependent territories in Oceania</a> - checked for sovereign states, associated states and non-sovereign territory shelves.</li>
+          <li><a href="https://en.wikipedia.org/wiki/Template:Sovereign_states_and_dependent_territories_in_Oceania">Wikipedia template: Sovereign states and dependent territories in Oceania</a> - checked for the longer "in part", dependency and territory lists; page last edited 1 January 2026 UTC when checked.</li>
+          <li><a href="https://www.dfat.gov.au/international-relations/regional-architecture/pacific-islands/pacific-islands-regional-organisation">DFAT: Pacific islands regional organisations</a> - checked for PIF and SPC membership wording, including associate-member wording for Tokelau, Wallis and Futuna, Guam and American Samoa.</li>
+        </ul>
       </div>
       <nav class="next-trail" aria-label="Page navigation">
         <a class="button button-secondary" href="progression.html">Previous: Progression</a>
@@ -112,7 +119,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><div><p>The Oceania map is a field of sovereign nodes, bridges and shared quests.</p><nav class="footer-links" aria-label="Footer links"><a href="site-map.html">Site map</a><a href="../LICENCE.md">Licence</a></nav></div></footer>
-  <script src="../script.js?v=20260701c"></script>
+  <footer class="site-footer"><div><p>The Oceania atlas is a research aid: useful for orientation, not a substitute for local authority, official sources or community consent.</p><nav class="footer-links" aria-label="Footer links"><a href="site-map.html">Site map</a><a href="../LICENCE.md">Licence</a></nav></div></footer>
+  <script src="../script.js?v=20260703b"></script>
 </body>
 </html>

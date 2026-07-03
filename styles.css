@@ -427,6 +427,39 @@ p {
   padding-bottom: .62rem;
 }
 
+.research-badge {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: .15rem .65rem;
+  align-items: baseline;
+  width: fit-content;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 224, 122, .46);
+  border-radius: 8px;
+  padding: .72rem .85rem;
+  background: rgba(255, 224, 122, .1);
+  color: #fff3bd;
+  box-shadow: 0 0 28px rgba(255, 224, 122, .12);
+}
+
+.research-badge span,
+.research-badge small {
+  color: rgba(255, 243, 189, .8);
+  font-size: .78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.research-badge strong {
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.research-badge small {
+  grid-column: 1 / -1;
+  text-transform: none;
+}
+
 .section {
   padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 4vw, 3rem);
 }
@@ -718,6 +751,251 @@ p {
 .chart-node:nth-child(4) { right: 22%; bottom: 14%; }
 .chart-node:nth-child(5) { left: 29%; bottom: 12%; }
 
+.oceania-atlas-layout {
+  display: grid;
+  grid-template-columns: minmax(20rem, 1.12fr) minmax(18rem, .88fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.oceania-map-panel,
+.oceania-atlas-copy,
+.oceania-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(9, 28, 54, .72), rgba(27, 10, 54, .72));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+}
+
+.oceania-map-panel {
+  display: grid;
+  gap: .65rem;
+  align-content: start;
+  padding: .9rem;
+}
+
+.oceania-map-stage {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(151, 206, 255, .32);
+  border-radius: 8px;
+  background: #0b1f35;
+}
+
+.oceania-map-stage img {
+  width: 100%;
+  aspect-ratio: 662 / 478;
+  object-fit: cover;
+}
+
+.oceania-map-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(6, 16, 31, 0), rgba(6, 16, 31, .18)),
+    radial-gradient(circle at 75% 20%, rgba(33, 214, 255, .13), transparent 22rem);
+}
+
+.oceania-hit-map {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.oceania-hit-link {
+  cursor: pointer;
+  outline: none;
+}
+
+.oceania-hit-link.is-hidden {
+  display: none;
+}
+
+.oceania-hit-zone {
+  fill: rgba(33, 214, 255, .035);
+  stroke: rgba(245, 249, 255, .46);
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+  transition: fill .16s ease, stroke .16s ease, filter .16s ease, stroke-width .16s ease;
+}
+
+.oceania-hit-link:hover .oceania-hit-zone,
+.oceania-hit-link:focus-visible .oceania-hit-zone,
+.oceania-hit-link.is-active .oceania-hit-zone {
+  fill: rgba(33, 214, 255, .24);
+  stroke: rgba(255, 224, 122, .95);
+  stroke-width: 2.6;
+  filter: drop-shadow(0 0 12px rgba(33, 214, 255, .65));
+}
+
+.map-source,
+.source-line {
+  margin: 0;
+  color: var(--soft);
+  font-size: .78rem;
+  line-height: 1.35;
+}
+
+.map-source a,
+.source-line a,
+.source-panel a {
+  color: #fff3bd;
+  font-weight: 850;
+}
+
+.oceania-atlas-copy {
+  display: grid;
+  align-content: center;
+  padding: clamp(1rem, 3vw, 1.3rem);
+}
+
+.oceania-atlas-copy h2 {
+  max-width: 13ch;
+  font-size: clamp(1.95rem, 4vw, 3.45rem);
+}
+
+.source-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .75rem;
+}
+
+.source-chip-row a {
+  display: inline-flex;
+  min-height: 2.25rem;
+  align-items: center;
+  border: 1px solid rgba(151, 206, 255, .34);
+  border-radius: 999px;
+  padding: .34rem .62rem;
+  background: rgba(255,255,255,.07);
+  color: #dff4ff;
+  font-size: .82rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.oceania-atlas {
+  display: grid;
+  gap: 1rem;
+}
+
+.oceania-card-layout {
+  display: grid;
+  grid-template-columns: minmax(18rem, .72fr) minmax(0, 1.28fr);
+  gap: .9rem;
+  align-items: start;
+}
+
+.oceania-detail-panel {
+  position: sticky;
+  top: 5.4rem;
+  display: grid;
+  gap: .55rem;
+  border: 1px solid rgba(255, 224, 122, .38);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(14, 42, 72, .84), rgba(33, 12, 62, .84));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+}
+
+.oceania-detail-panel span {
+  color: var(--gold);
+  font-size: .76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.oceania-detail-panel h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.oceania-detail-panel p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.oceania-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .9rem;
+}
+
+.oceania-card {
+  display: grid;
+  gap: .42rem;
+  min-height: 13rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(9, 28, 54, .72), rgba(27, 10, 54, .72));
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  transition: border-color .18s ease, transform .18s ease, background .18s ease;
+  cursor: pointer;
+}
+
+.oceania-card[hidden] {
+  display: none;
+}
+
+.oceania-card:hover,
+.oceania-card:focus-within,
+.oceania-card.is-active {
+  border-color: rgba(255, 224, 122, .72);
+  background: linear-gradient(145deg, rgba(19, 66, 102, .7), rgba(38, 13, 71, .76));
+}
+
+.oceania-card.is-active {
+  transform: translateY(-2px);
+}
+
+.oceania-card::after {
+  content: "Open note";
+  width: fit-content;
+  border: 1px solid rgba(151, 206, 255, .3);
+  border-radius: 999px;
+  padding: .25rem .55rem;
+  color: #dff4ff;
+  font-size: .75rem;
+  font-weight: 900;
+}
+
+.oceania-card.is-active::after {
+  content: "Open";
+  color: #fff3bd;
+}
+
+.oceania-card span {
+  color: var(--gold);
+  font-size: .76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.oceania-card h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.24rem;
+  line-height: 1.12;
+}
+
+.oceania-card p,
+.oceania-card small,
+.oceania-card em {
+  margin: 0;
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.35;
+}
+
 .next-trail {
   display: flex;
   flex-wrap: wrap;
@@ -821,7 +1099,8 @@ p {
 @media (max-width: 980px) {
   .hero-grid,
   .section-heading,
-  .media-panel {
+  .media-panel,
+  .oceania-atlas-layout {
     grid-template-columns: 1fr;
   }
 
@@ -833,7 +1112,8 @@ p {
   .feature-grid,
   .phase-grid,
   .region-grid,
-  .principle-grid {
+  .principle-grid,
+  .oceania-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -894,8 +1174,21 @@ p {
   .feature-grid,
   .phase-grid,
   .region-grid,
-  .principle-grid {
+  .principle-grid,
+  .oceania-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .oceania-map-panel {
+    padding: .65rem;
+  }
+
+  .oceania-card-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .oceania-detail-panel {
+    position: static;
   }
 
   .hero-grid .status-card {
