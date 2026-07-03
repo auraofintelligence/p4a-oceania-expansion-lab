@@ -789,13 +789,6 @@ p {
   object-fit: cover;
 }
 
-.oceania-scribble-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
 .oceania-map-stage::after {
   content: "";
   position: absolute;
@@ -824,21 +817,21 @@ p {
 }
 
 .oceania-hit-zone {
-  fill: transparent;
+  fill: rgba(var(--zone-rgb, 33, 214, 255), .001);
   stroke: transparent;
-  stroke-width: 1.6;
+  stroke-width: 1.4;
   pointer-events: all;
   vector-effect: non-scaling-stroke;
-  transition: fill .16s ease, stroke .16s ease, filter .16s ease, stroke-width .16s ease;
+  transition: fill .16s ease, stroke .16s ease, filter .16s ease;
 }
 
 .oceania-hit-link:hover .oceania-hit-zone,
 .oceania-hit-link:focus-visible .oceania-hit-zone,
 .oceania-hit-link.is-active .oceania-hit-zone {
-  fill: rgba(33, 214, 255, .09);
-  stroke: rgba(255, 224, 122, .62);
-  stroke-width: 1.7;
-  filter: drop-shadow(0 0 9px rgba(33, 214, 255, .42));
+  fill: rgba(var(--zone-rgb, 33, 214, 255), .38);
+  stroke: rgba(245, 249, 255, .94);
+  stroke-width: 2.2;
+  filter: drop-shadow(0 0 12px rgba(var(--zone-rgb, 33, 214, 255), .58));
 }
 
 .map-source,
