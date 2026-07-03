@@ -712,6 +712,10 @@ p {
   color: #fff3bd;
 }
 
+.oceania-filter-buttons--map {
+  margin: -0.2rem 0 1rem;
+}
+
 .region-card[hidden],
 .phase-card[hidden] {
   display: none;

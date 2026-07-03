@@ -203,6 +203,25 @@ document.querySelectorAll('[data-region-switcher]').forEach((switcher) => {
   };
 
   Object.assign(mapShapes, blobShapes);
+  const usShelfPaths = [
+    blobShapes.hawaii,
+    blobShapes.northernMarianaIslands,
+    'M 232 42 L 228 24 L 237 6 L 248 6 L 265 14 L 269 28 L 259 44 L 244 50 Z',
+    'M 429 51 L 407 72 L 395 68 L 383 52 L 404 28 L 418 28 L 430 42 Z',
+    'M 463 93 L 470 98 L 469 120 L 461 122 L 448 136 L 435 135 L 431 122 L 437 98 L 445 92 Z',
+    'M 342 163 L 342 146 L 349 135 L 363 132 L 375 142 L 378 157 L 364 172 L 350 171 Z',
+    'M 471 152 L 481 158 L 483 174 L 472 184 L 458 183 L 446 171 L 448 158 L 458 149 Z',
+    'M 406 227 L 411 227 L 433 252 L 426 273 L 396 273 L 391 267 L 397 247 L 389 231 L 392 227 Z',
+    mapShapes.americanSamoa,
+    mapShapes.guam
+  ];
+  mapShapes.usBloc = usShelfPaths.join(' ');
+  mapShapes.franceBloc = [
+    blobShapes.frenchPolynesia,
+    blobShapes.newCaledonia,
+    blobShapes.wallisFutuna,
+    'M 600 90 L 604 81 L 612 86 L 609 95 Z'
+  ].join(' ');
   mapShapes.australasia = `${mapShapes.australia} ${mapShapes.newZealand}`;
   mapShapes.melanesia = `${mapShapes.papuaNewGuinea} ${mapShapes.solomonIslands} ${mapShapes.vanuatu} ${mapShapes.fiji} ${mapShapes.newCaledonia}`;
   mapShapes.micronesia = `${mapShapes.northernMarianaIslands} ${mapShapes.guam} ${mapShapes.palau} ${mapShapes.micronesiaFsm} ${mapShapes.marshallIslands} ${mapShapes.nauru}`;
@@ -238,6 +257,7 @@ document.querySelectorAll('[data-region-switcher]').forEach((switcher) => {
     { id: 'coral-sea-islands', kind: 'territory', tag: 'Australia-administered', name: 'Coral Sea Islands', status: 'Wikipedia template checked lists Coral Sea Islands under Australia in the territory shelf.', summary: 'The base map checked here does not label this separately, so this entry stays card-only until a detailed reef/island layer is added.', next: 'Next research layer: external territory administration, environmental management and reef/island status.', source: sourceNotes.list },
     { id: 'norfolk-island', kind: 'territory', tag: 'Australia-administered', name: 'Norfolk Island', status: 'Wikipedia template checked lists Norfolk Island under Australia in the territory shelf.', summary: 'The base map checked here does not clearly label this separately, so this entry stays card-only until a detailed territory layer is added.', next: 'Next research layer: Australian external territory administration, regional council, self-government history and Pitcairn-descendant community history.', source: sourceNotes.list },
 
+    { id: 'france-oceania-bloc', kind: 'bloc', tag: 'France-linked shelf', name: 'France-linked Oceania bloc', status: 'Sources checked list French Polynesia, New Caledonia and Wallis and Futuna under France; Clipperton appears in some territory lists rather than the regional organisation source.', summary: 'This aggregate fill is a navigation helper for France-linked areas on this atlas. It is not a border claim, and each territory still needs its own governance and history page.', next: 'Next research layer: French state relationship, local assemblies, communes, customary authorities, self-determination history and nuclear-testing history where relevant.', source: sourceNotes.list, shape: mapShapes.franceBloc },
     { id: 'clipperton-island', kind: 'territory', tag: 'France-administered', name: 'Clipperton Island', status: 'Wikipedia template checked lists Clipperton Island under France in the territory shelf.', summary: 'The base map checked here does not show this as a separate labelled area, so this entry stays card-only until a detailed territory layer is added.', next: 'Next research layer: French administration, Pacific/Latin America boundary debates and uninhabited-island governance.', source: sourceNotes.followup },
     { id: 'french-polynesia', kind: 'territory', tag: 'France-administered', name: 'French Polynesia', status: 'Sources checked list French Polynesia under France and DFAT lists it as a PIF member.', summary: 'A later page should avoid flattening French Polynesia into France; its own institutions and archipelagos matter.', next: 'Next research layer: Assembly, President, communes, archipelagos, French state relationship and nuclear-testing history.', source: sourceNotes.dfat, shape: mapShapes.frenchPolynesia },
     { id: 'new-caledonia', kind: 'territory', tag: 'France-administered', name: 'New Caledonia', status: 'Sources checked list New Caledonia under France and DFAT lists it as a PIF member.', summary: 'New Caledonia needs a dedicated current-status research pass before any governance claims beyond source-listing.', next: 'Next research layer: Congress, provinces, customary Senate, Noumea Accord history and referendum sequence.', source: sourceNotes.dfat, shape: mapShapes.newCaledonia },
@@ -246,6 +266,7 @@ document.querySelectorAll('[data-region-switcher]').forEach((switcher) => {
     { id: 'tokelau', kind: 'territory', tag: 'New Zealand-administered', name: 'Tokelau', status: 'Sources checked list Tokelau under New Zealand; DFAT lists it as a PIF associate member.', summary: 'Tokelau needs its own page for village governance and the New Zealand relationship.', next: 'Next research layer: General Fono, village councils, administrator relationship and self-determination referendums.', source: sourceNotes.dfat, shape: mapShapes.tokelau },
     { id: 'pitcairn-islands', kind: 'territory', tag: 'UK-administered', name: 'Pitcairn Islands', status: 'Wikipedia template checked lists Pitcairn Islands under the United Kingdom.', summary: 'The base map checked here does not clearly label this separately, so this entry stays card-only until a detailed territory layer is added.', next: 'Next research layer: British overseas territory administration, island council and Pitcairn-descendant history.', source: sourceNotes.list },
 
+    { id: 'usa-oceania-bloc', kind: 'bloc', tag: 'United States-linked shelf', name: 'United States-linked Oceania bloc', status: 'Sources checked list several United States-linked Pacific entries across "in part", US-administered and US Minor Outlying Island shelves; source frames do not all use the same inclusion rule.', summary: 'This aggregate fill is a navigation helper for US-linked areas visible or implied by the base map and project sketch. It keeps sovereign Compact states separate for now unless a later source pass adds a compact-relationship layer.', next: "Next research layer: unincorporated territories, minor outlying islands, Hawai'i in-part framing, compact relationships, local government and Indigenous governance histories.", source: sourceNotes.followup, shape: mapShapes.usBloc },
     { id: 'hawaii', kind: 'followup', tag: 'United States in part', name: "Hawai'i", status: "Wikipedia template checked lists Hawai'i under the United States in the \"in part\" shelf.", summary: "This is a follow-up card because definitions of Oceania vary and Hawai'i needs its own Indigenous/statehood history layer.", next: 'Next research layer: US state government, counties, Native Hawaiian governance, annexation/statehood history and Pacific regional links.', source: sourceNotes.followup, shape: mapShapes.hawaii },
     { id: 'palmyra-atoll', kind: 'followup', tag: 'United States in part', name: 'Palmyra Atoll', status: 'Wikipedia template checked lists Palmyra Atoll under the United States in the "in part" shelf.', summary: 'The base map checked here does not separate Palmyra clearly from other US outlying islands, so this entry stays card-only until a detailed minor-islands layer is added.', next: 'Next research layer: incorporated US territory status, refuge administration and Pacific classification.', source: sourceNotes.followup },
     { id: 'american-samoa', kind: 'territory', tag: 'US-administered', name: 'American Samoa', status: 'Sources checked list American Samoa under the United States; DFAT lists it as a PIF associate member.', summary: 'The map labels American Samoa beside Samoa, so the card keeps them distinct.', next: 'Next research layer: unincorporated territory status, Fono, counties/villages, matai system and citizenship/nationality questions.', source: sourceNotes.dfat, shape: mapShapes.americanSamoa },
@@ -288,8 +309,8 @@ document.querySelectorAll('[data-region-switcher]').forEach((switcher) => {
     if (area.kind === 'followup') layers.push('followup');
     if (area.id === 'australia' || area.tag.includes('Australia-administered')) layers.push('australia-admin');
     if (area.id === 'new-zealand' || area.kind === 'associated' || area.tag.includes('New Zealand-administered')) layers.push('new-zealand-admin');
-    if (area.tag.includes('France-administered')) layers.push('france-admin');
-    if (area.tag.includes('US-administered') || area.tag.includes('US Minor Outlying Island') || area.id === 'hawaii' || area.id === 'palmyra-atoll') layers.push('us-admin');
+    if (area.id === 'france-oceania-bloc' || area.tag.includes('France-administered')) layers.push('france-admin');
+    if (area.id === 'usa-oceania-bloc' || area.tag.includes('US-administered') || area.tag.includes('US Minor Outlying Island') || area.id === 'hawaii' || area.id === 'palmyra-atoll') layers.push('us-admin');
     if (area.kind === 'territory' && layers.length === 0) layers.push('other-territory');
     return [...new Set(layers.length ? layers : ['other-territory'])];
   };
@@ -297,8 +318,8 @@ document.querySelectorAll('[data-region-switcher]').forEach((switcher) => {
   const getZoneColourLayer = (area) => {
     if (area.id === 'australia' || area.tag.includes('Australia-administered')) return 'australia-admin';
     if (area.id === 'new-zealand' || area.kind === 'associated' || area.tag.includes('New Zealand-administered')) return 'new-zealand-admin';
-    if (area.tag.includes('France-administered')) return 'france-admin';
-    if (area.tag.includes('US-administered') || area.tag.includes('US Minor Outlying Island') || area.id === 'hawaii' || area.id === 'palmyra-atoll') return 'us-admin';
+    if (area.id === 'france-oceania-bloc' || area.tag.includes('France-administered')) return 'france-admin';
+    if (area.id === 'usa-oceania-bloc' || area.tag.includes('US-administered') || area.tag.includes('US Minor Outlying Island') || area.id === 'hawaii' || area.id === 'palmyra-atoll') return 'us-admin';
     if (area.kind === 'region') return 'region';
     if (area.kind === 'followup') return 'followup';
     return 'sovereign';

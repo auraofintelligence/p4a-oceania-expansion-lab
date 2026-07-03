@@ -7,7 +7,7 @@
   <meta name="description" content="A sourced Oceania atlas page for the P4A civic workbench idea, with a Wikimedia political map, layered hover regions, territory cards and follow-up notes.">
   <meta name="theme-color" content="#102A4A">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../styles.css?v=20260703g">
+  <link rel="stylesheet" href="../styles.css?v=20260703h">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -46,6 +46,17 @@
       <div class="section-heading reveal">
         <div><p class="eyebrow">Clickable map</p><h2>Start with the actual ocean.</h2></div>
         <p>The base image is a Wikimedia Commons PNG political map of Oceania with EEZ-style borders. The hover zones are hidden SVG fills traced from the project sketch: visible only on hover or focus, and kept provisional rather than treated as boundary evidence.</p>
+      </div>
+      <div class="region-buttons oceania-filter-buttons oceania-filter-buttons--map reveal" role="group" aria-label="Filter Oceania map layers">
+        <button type="button" data-oceania-choice="all" aria-pressed="true">All cards</button>
+        <button type="button" data-oceania-choice="region" aria-pressed="false">Regions</button>
+        <button type="button" data-oceania-choice="sovereign" aria-pressed="false">Sovereign / free association</button>
+        <button type="button" data-oceania-choice="australia-admin" aria-pressed="false">Australia shelf</button>
+        <button type="button" data-oceania-choice="france-admin" aria-pressed="false">France shelf</button>
+        <button type="button" data-oceania-choice="new-zealand-admin" aria-pressed="false">NZ / Realm shelf</button>
+        <button type="button" data-oceania-choice="us-admin" aria-pressed="false">US shelf</button>
+        <button type="button" data-oceania-choice="other-territory" aria-pressed="false">Other territories</button>
+        <button type="button" data-oceania-choice="followup" aria-pressed="false">Follow-up</button>
       </div>
       <div class="oceania-atlas-layout reveal" data-oceania-atlas>
         <div class="oceania-map-panel">
@@ -124,6 +135,6 @@
   </main>
 
   <footer class="site-footer"><div><p>The Oceania atlas is a research aid: useful for orientation, not a substitute for local authority, official sources or community consent.</p><nav class="footer-links" aria-label="Footer links"><a href="site-map.html">Site map</a><a href="../LICENCE.md">Licence</a></nav></div></footer>
-  <script src="../script.js?v=20260703g"></script>
+  <script src="../script.js?v=20260703h"></script>
 </body>
 </html>
